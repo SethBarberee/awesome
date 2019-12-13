@@ -28,10 +28,11 @@ function gstring.xml_unescape(text)
     return text and text:gsub("&(%a+);", xml_entity_chars) or nil
 end
 
---- Count number of lines in a string
+--- Count number of lines in a string.
 -- @tparam string text Input string.
 -- @treturn int Number of lines.
 -- @staticfct gears.string.linecount
+-- @DOC_text_gears_string_linecount_EXAMPLE@
 function gstring.linecount(text)
     return select(2, text:gsub('\n', '\n')) + 1
 end
@@ -42,6 +43,7 @@ end
 -- @param indent Number of spaces added before each wrapped line. Default: 0.
 -- @return The string with lines wrapped to width.
 -- @staticfct gears.string.linewrap
+-- @DOC_text_gears_string_linewrap_EXAMPLE@
 function gstring.linewrap(text, width, indent)
     text = text or ""
     width = width or 72
@@ -60,7 +62,9 @@ end
 --- Escape all special pattern-matching characters so that lua interprets them
 -- literally instead of as a character class.
 -- Source: http://stackoverflow.com/a/20778724/15690
+-- @param s String to generate pattern for
 -- @staticfct gears.string.quote_pattern
+-- @DOC_text_gears_string_quote_pattern_EXAMPLE@
 function gstring.quote_pattern(s)
     -- All special characters escaped in a string: %%, %^, %$, ...
     local patternchars = '['..("%^$().[]*+-?"):gsub("(.)", "%%%1")..']'
