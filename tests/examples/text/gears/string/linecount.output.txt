@@ -1,2 +1,2 @@
-Count is 1
-Count is 3
+Count is: 1
+Count is: 3
