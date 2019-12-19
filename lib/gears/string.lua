@@ -63,7 +63,7 @@ end
 -- literally instead of as a character class.
 -- Source: http://stackoverflow.com/a/20778724/15690
 -- @DOC_text_gears_string_quote_pattern_EXAMPLE@
--- @tparam s string to generate pattern for
+-- @tparam string s String to generate pattern for
 -- @treturn string string with escaped characters
 -- @staticfct gears.string.quote_pattern
 function gstring.quote_pattern(s)
@@ -73,7 +73,7 @@ function gstring.quote_pattern(s)
 end
 
 --- Generate a pattern matching expression that ignores case.
--- @tparam s string Original pattern matching expression.
+-- @tparam string q Original pattern matching expression.
 -- @staticfct gears.string.query_to_pattern
 function gstring.query_to_pattern(q)
     local s = gstring.quote_pattern(q)
@@ -109,7 +109,7 @@ end
 --- Check if a string starts with another string.
 -- @DOC_text_gears_string_startswith_EXAMPLE@
 -- @tparam string str String to search
--- @treturn boolean true if string starts with specified string
+-- @treturn boolean `true` if string starts with specified string
 -- @tparam string sub String to check for.
 -- @staticfct gears.string.startswith
 function gstring.startswith(str, sub)
@@ -120,7 +120,7 @@ end
 -- @DOC_text_gears_string_endswith_EXAMPLE@
 -- @tparam string str String to search
 -- @tparam string sub String to check for.
--- @treturn boolean true if string ends with specified string
+-- @treturn boolean `true` if string ends with specified string
 -- @staticfct gears.string.endswith
 function gstring.endswith(str, sub)
     return sub == "" or string.sub(str,-string.len(sub)) == sub
