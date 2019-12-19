@@ -42,47 +42,47 @@
  * @staticfct drawable
  */
 
-/**
+/** When a mouse button is pressed over the drawable.
  * @signal button::press
  */
 
-/**
+/** When a mouse button is released over the drawable.
  * @signal button::release
  */
 
-/**
+/** When the mouse enters the drawable.
  * @signal mouse::enter
  */
 
-/**
+/** When the mouse leaves the drawable.
  * @signal mouse::leave
  */
 
-/**
+/** When the mouse moves over the drawable.
  * @signal mouse::move
  */
 
-/**
+/** When the geometry of the drawble changes.
  * @signal property::geometry
  */
 
-/**
+/** When the height of the drawable changes.
  * @signal property::height
  */
 
-/**
+/** When the width of the drawable changes.
  * @signal property::width
  */
 
-/**
+/** When the x coordinate of the drawable changes.
  * @signal property::x
  */
 
-/**
+/** When the y coordinate of the drawable changes.
  * @signal property::y
  */
 
-/**
+/** When the surface is redrawn.
  * @signal property::surface
  */
 
